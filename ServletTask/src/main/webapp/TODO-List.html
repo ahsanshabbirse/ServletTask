@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<button class="tablink" onclick="openPage('Add', this, 'green')">Add</button>
+<button class="tablink" onclick="openPage('View', this, 'green')" id="defaultOpen">View</button>
+<button class="tablink" onclick="openPage('Modify', this, 'blue')">Modify</button>
+
+<div id="Add" class="tabcontent">
+<div class="form-style-10">
+<h1>TO-DO List!<span>Please ADD New Task!</span></h1>
+<form class="form-margin">
+ 
+    <div class="inner-wrap">
+        <label>TASK Name <input type="text" name="task-name" /></label>
+        <label>TASK Description <textarea name="task-desc"></textarea></label>
+	<div>
+	<label>START Date <input type="date" class="start"  name="start-date" /></label>
+	<label class="end">END Date <input  type="date" name="end-date" /></label>
+	</div>
+    </div>
+
+    <div class="button-section">
+     <input type="submit" name="Submit" />
+    </div>
+</form>
+</div> 
+</div>
+
+<div id="View" class="tabcontent">
+  <h3>View</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Modify" class="tabcontent">
+  <h3>Modify</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+<script src="javascript.js"></script>
+</html>
